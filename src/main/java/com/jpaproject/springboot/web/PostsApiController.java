@@ -1,6 +1,5 @@
 package com.jpaproject.springboot.web;
 
-import com.jpaproject.springboot.domain.posts.PostsRepository;
 import com.jpaproject.springboot.service.PostsService;
 import com.jpaproject.springboot.web.dto.PostsResponseDto;
 import com.jpaproject.springboot.web.dto.PostsSaveRequestDto;
@@ -28,5 +27,8 @@ public class PostsApiController {
     public PostsResponseDto findById(@PathVariable Long id) {
         return postsService.findById(id);
     }
+
+//    @GetMapping("/api/v1/posts")
+//    public List<PostListResponseDto> findByAll() { return postsService.findByAll(); }
 
 }
